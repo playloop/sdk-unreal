@@ -1,0 +1,23 @@
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+# Local worktree scratch dirs; never commit these.
+.wt-*/
+*.opensdf
+*.sdf
+*.suo
+*.xcodeproj/
+*.xcworkspace/
+.vs/
+.vscode/
+.idea/
+*.user
+*.VC.db
+*.VC.opendb
+# UE BuildPlugin regenerates an empty default FilterPlugin.ini when missing;
+# it carries no content (Resources/ is auto-packaged), so don't track it.
+Config/FilterPlugin.ini
+
+# Machine-local denylist for the .githooks content gate (never commit).
+.githooks/denylist.local

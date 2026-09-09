@@ -1,0 +1,33 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "0.5.0",
+  "FriendlyName": "Playloop SDK",
+  "Description": "Drop Playloop into your Unreal game. Track() what players do, get back a plain-English playthrough report.",
+  "Category": "Analytics",
+  "CreatedBy": "Turtlevania Games LLC",
+  "CreatedByURL": "https://playloop.gg",
+  "DocsURL": "https://playloop.gg/docs",
+  "MarketplaceURL": "",
+  "SupportURL": "https://playloop.gg/contact",
+  "CanContainContent": false,
+  "Installed": false,
+  "Modules": [
+    {
+      "Name": "PlayloopSDK",
+      "Type": "Runtime",
+      "LoadingPhase": "PreDefault"
+    },
+    {
+      "Name": "PlayloopSDKEditor",
+      "Type": "Editor",
+      "LoadingPhase": "Default"
+    },
+    {
+      "Name": "PlayloopSDKTests",
+      "Type": "DeveloperTool",
+      "LoadingPhase": "Default",
+      "WhitelistPlatforms": [ "Win64", "Mac", "Linux" ]
+    }
+  ]
+}
