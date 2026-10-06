@@ -5,6 +5,9 @@ public class PlayloopSDK : ModuleRules
     public PlayloopSDK(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+        // each file keeps its own helpers in an anonymous namespace (NowMs, the widget's colours); a unity blob that puts
+        // two of them together fails to compile (UE 5.8 on Linux groups them that way)
+        bUseUnity = false;
 
         PublicDependencyModuleNames.AddRange(new string[]
         {
